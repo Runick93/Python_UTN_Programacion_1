@@ -13,8 +13,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from .lista_nombres import lista_nombres_heroes
+from .lista_identidades import lista_identidades_heroes
 from .lista_alturas import lista_alturas_heroes
 from .lista_poder import lista_poder_heroes
-from .lista_identidades import lista_identidades_heroes
-from .lista_nombres import lista_nombres_heroes
 from .lista_generos import lista_generos_heroes

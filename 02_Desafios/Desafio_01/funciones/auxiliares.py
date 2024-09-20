@@ -36,3 +36,31 @@ def play_sound():
     mixer.music.play()
     time.sleep(0.4)
 
+def mostrar_nombre(lis_nom: list, i: int) -> str:
+    return lis_nom[i]
+
+def obtener_maximo(lis_num: list) -> float:
+    numero = None
+
+    for num in lis_num:
+        if not numero or numero < num:
+            numero = num
+    
+    return float(numero)
+
+def promedio(lis_num: list) -> float:
+    sum = 0
+
+    for n in lis_num:
+        sum += n
+
+    return sum/len(lis_num)
+
+def obtener_mitad_de_maximo(lis_num: list) -> float:
+    maximo = obtener_maximo(lis_num)
+
+    return maximo/2
+
+if __name__ == '__main__':
+    mostrar_nombre(['Scott Summers, Jean Grey, Erik Lenhsherr, Hank McCoy'], 0)
+    obtener_maximo([-8, -3, -4, 0, -7])
